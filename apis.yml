@@ -1,8 +1,29 @@
 aid: clarabridge
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/clarabridge.png
 name: Clarabridge
-description: Clarabridge is a company surfaced as a portfolio company of general-catalyst and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Clarabridge was a customer experience management (CEM) and conversational
+  analytics company known for its natural-language-understanding platform that
+  analyzed unstructured customer feedback — contact-center transcripts, chat,
+  email, surveys, social media, and online reviews — to surface sentiment,
+  emotion, effort, intent, and emerging topics. Qualtrics acquired Clarabridge
+  in 2021, and the technology has since been integrated and rebranded inside the
+  Qualtrics XM platform: Clarabridge Studio became Qualtrics XM Discover and
+  Clarabridge Engage became Qualtrics Connect. Clarabridge no longer operates an
+  independent developer portal or public API; its capabilities are now delivered
+  through Qualtrics. This profile is retained as a company/brand record in the
+  API Evangelist network with an acquisition pointer to Qualtrics.
 url: https://raw.githubusercontent.com/api-evangelist/clarabridge/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,14 +31,39 @@ x-backed-by:
 - general-catalyst
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: qualtrics
+x-acquired-year: '2021'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Customer Experience
+- Conversational Analytics
+- Text Analytics
+- Sentiment Analysis
+- Natural Language Understanding
+- Voice of the Customer
+- Acquired
 apis: []
+common:
+- type: Website
+  url: https://www.clarabridge.com/
+  name: Clarabridge (redirects to Qualtrics)
+- type: Documentation
+  url: https://www.qualtrics.com/clarabridge/
+  name: Clarabridge on Qualtrics
+- type: DomainSecurity
+  url: security/clarabridge-domain-security.yml
+  name: Domain security posture (probed)
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
